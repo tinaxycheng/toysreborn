@@ -3,5 +3,4 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+projects = Project.create(title: 'TV box', description: 'fishes in the TV' , image1: 'fish1.png' , image2: 'fish2.jpg' )

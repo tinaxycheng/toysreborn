@@ -4,13 +4,17 @@
     <title>ToysrebornApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
     <%= render "shared/nav" %>
     <%= yield %>
   </body>
+
+
 </html>
