@@ -1,6 +1,4 @@
 class ApplicationController < ActionController::Base
-  def home
-  end
-  def about
+  def index
   end
 end

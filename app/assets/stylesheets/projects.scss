@@ -7,43 +7,45 @@
   margin: 20px 0px 0px 0px;
 }
 
-
 .card-img-top{
   width: 100%;
   display: block;
-  max-height:200px;
   height: auto;
 }
 .card-img-back {
   width: 100%;
   display: block;
-  max-height:200px;
   height: auto;
 }
 .card-body{
+  border: 1px solid #f1f1f1;
 	height: 100px;
-	padding: 20px 0px 0px 0px;
+	padding: 20px 20px 0px 20px;
 }
 .card-title{
+  height:10px;
   font-family: var(--ccft-ts-secondary);
+  color: rgb(122, 122, 122);
   font-size: 1rem;
   font-style: normal;
-  line-height: 1.2;
+  line-height: 2;
 }
 .card-text{
+  color: rgb(122, 122, 122);
   font-size: .92rem;
-  line-height: 1.75;
+  line-height: 1.25;
 }
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+
+/* The flip box container */
 .flip-box {
   height: 200px;
   background-color: white;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
 }
 
-/* This container is needed to position the front and back side */
+
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -53,12 +55,11 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+
 .flip-box-front, .flip-box-back {
   position: absolute;
   width: 100%;
@@ -66,15 +67,104 @@
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+
 .flip-box-front {
-  background-color: #bbb;
-  color: black;
+  background-color: white;
 }
 
-/* Style the back side */
+
 .flip-box-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: white;
   transform: rotateY(180deg);
 }
+
+
+
+/* The nav bar */
+.product-profile-image{
+  padding: 5px, 5px, 5px, 5px;
+}
+.profile-image{
+  width:290px;
+  margin: 5px, 5px, 5px, 5px;
+}
+
+.navbar-fixed-left {
+  width: 300px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 250px;
+  padding-left:20px;
+}
+
+.navbar-fixed-left + .product-container {
+  padding-left: 320px;
+}
+
+
+
+
+
+
+/* Project Intro */
+.project-intro{
+  margin: 20px;
+}
+
+.project-title{
+  height:30px;
+  font-family: var(--ccft-ts-secondary);
+  color: rgb(122, 122, 122);
+  font-size: 1.5rem;
+  font-style: normal;
+  line-height: 1;
+}
+.project-brief{
+  color: rgb(122, 122, 122);
+  font-size: 1.1rem;
+  line-height: 1.25;
+
+}
+.project-description{
+   color: rgb(122, 122, 122);
+  font-size: .92rem;
+  line-height: 1.25;
+}
+
+
+
+.product-slider { 
+  padding: 20px; }
+
+.product-slider #thumbcarousel { 
+  margin: 12px 0 0; padding: 0 45px;
+
+  }
+
+.product-slider #thumbcarousel .item { text-align: center; }
+
+.product-slider #thumbcarousel .item .thumb {
+ border: 4px solid #cecece; width: 20%; margin: 0 2%; display: inline-block; vertical-align: middle; cursor: pointer; max-width: 98px; 
+}
+
+.product-slider #thumbcarousel .item .thumb:hover {
+ border-color: #1089c0; 
+}
+
+.product-slider .item img {
+ width: 100%; height: auto; }
+
+.carousel-control {
+ text-align: center; text-shadow: none; font-size: 30px; width: 30px; height: 30px; line-height: 20px; top: 23%; 
+}
+
+.carousel-control:hover, .carousel-control:focus, .carousel-control:active {
+ color: black; }
+
+.carousel-control { background-color: rgb(230,230,230); width: auto; }
+
