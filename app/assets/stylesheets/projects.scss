@@ -23,19 +23,26 @@
 	padding: 20px 20px 0px 20px;
 }
 .card-title{
-  height:15px;
+  position: absolute;
+  height:18px;
+  padding: 0px 5px 0px 5px;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: rgb(50, 50, 50);
   font-size: 1rem;
   font-style: normal;
-  line-height: 2;
+  line-height: 1;
+  overflow:hidden;
 }
 .card-text{
-  margin-top:10px;
+  position: absolute;
+  height:40px;
+  margin-top:28px;
+  padding: 0px 5px 0px 5px;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: rgb(122, 122, 122);
   font-size: .92rem;
   line-height: 1.25;
+  overflow:hidden;
 }
 
 
@@ -87,12 +94,12 @@
   padding: 5px, 5px, 5px, 5px;
 }
 .profile-image{
-  width:290px;
+  width:100%;
   margin: 5px, 5px, 5px, 5px;
 }
 
 .navbar-fixed-left {
-  width: 300px;
+  width: 25%;
   position: fixed;
   border-radius: 0;
   height: 100%;
@@ -100,12 +107,12 @@
 
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
-  width: 250px;
-  padding-left:20px;
+  width: 90%;
+
 }
 
 .navbar-fixed-left + .product-container {
-  padding-left: 320px;
+  padding-left: 25%;
 }
 
 
@@ -119,20 +126,24 @@
 }
 
 .project-title{
-  height:30px;
   font-family: var(--ccft-ts-secondary);
   color: rgb(122, 122, 122);
   font-size: 1.5rem;
   font-style: normal;
   line-height: 1;
+  margin-bottom: 10px;
+
 }
 .project-brief{
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: rgb(122, 122, 122);
   font-size: 1.1rem;
   line-height: 1.25;
 
 }
 .project-description{
+  margin-top: 20px;
    color: rgb(122, 122, 122);
   font-size: .92rem;
   line-height: 1.25;
