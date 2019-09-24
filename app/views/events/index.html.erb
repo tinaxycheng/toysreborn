@@ -2,10 +2,11 @@
     <div class="col-lg-10 col-lg-offset-1 event_container">
       <div class="row">
         <% @events.each do |event| %>
-        <div class="col-md-6 col-sm-8">
+        <div class="col-lg-4 col-md-4">
           <div class="card card-event">
              <%= link_to event_path(event) do %>
-               <img class="card-img" src="https://i.pinimg.com/564x/ec/15/7d/ec157df94e4b934162d5a306e078843d.jpg">
+              
+                <%= image_tag event.image, :class => "card-img"%>
             <div class="card-body">
               <h1 class="card-title"> <%=event.title%></h1>
               <p class="card-text"> <%=event.location%></p>

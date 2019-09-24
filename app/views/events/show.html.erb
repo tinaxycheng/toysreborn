@@ -5,19 +5,22 @@
         <div class="product-profile-image">
         </div>
       <li>
-        <a class="page-scroll" href="#ProductInfo"> 产品信息 <br> Product Information</a>
+        <a class="page-scroll" href="#ProductInfo"> 新闻<br>News </a>
       </li>
       <li>
-       <a class="page-scroll" href="#History"> 改造过程 <br> Process</a>
+       <a class="page-scroll" href="#History"> 媒体<br> Media</a>
      </li>
     </nav>
   <div class="product-container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
     <div class="event-intro">
-      <h3 class="card-title"><%= @event.title %></h3>
-      <p class="card-title"><%= @event.text %></p>
-      <p class="card-title"><%= @event.time %></p>
-      <p class="card-title"><%= @event.location %></p>
-      <p class="card-text"><%= @event.created_at %></p>
+      <h3 class="project-title"><%= @event.title %></h3>
+       <p class="project-brief"><%= @event.location %></p>
+      <p class="project-description"><%= @event.text %></p>
+
+     </div>
+   </div>
     </div>  
   </div>
 </div>

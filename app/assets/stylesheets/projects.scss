@@ -23,14 +23,16 @@
 	padding: 20px 20px 0px 20px;
 }
 .card-title{
-  height:10px;
-  font-family: var(--ccft-ts-secondary);
-  color: rgb(122, 122, 122);
+  height:15px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: rgb(50, 50, 50);
   font-size: 1rem;
   font-style: normal;
   line-height: 2;
 }
 .card-text{
+  margin-top:10px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: rgb(122, 122, 122);
   font-size: .92rem;
   line-height: 1.25;
