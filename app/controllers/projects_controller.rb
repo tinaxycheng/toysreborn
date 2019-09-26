@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
 
   def show
   	@project = Project.find(params[:id])
+    @images= Project.find(params[:id]).images
   end
 
   def new
